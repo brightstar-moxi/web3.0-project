@@ -20,6 +20,7 @@ NavbarItem.propTypes= {
 }
 
 const Navbar = () => {
+    const[toggleMenu, setToggleMenu] = React.useState(false);
     return(
         <nav className='w-full flex md:justify-center justify-between items-center p-4'>
 <div className='md:flex-[0.5] flex-initial justify-center items-center'>
@@ -32,10 +33,14 @@ const Navbar = () => {
 <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
 Login
 </li>
-<div>
-    
-</div>
+
 </ul>
+<div className="flex relative">
+    {toggleMenu
+    ? <AiOutlineClose fontSiz={28} className="text-white md:hidden cursor-pointer" onclick={() => setToggleMenu(false)}/>
+    : <HiMenuAlt4 fontSiz={28} className="text-white md:hidden cursor-pointer" onclick={() => setToggleMenu()}/>
+}
+</div>
             </nav>
     )
 }
