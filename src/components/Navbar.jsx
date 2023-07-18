@@ -37,8 +37,8 @@ Login
 </ul>
 <div className="flex relative">
     {toggleMenu
-    ? <AiOutlineClose fontSiz={28} className="text-white md:hidden cursor-pointer" onclick={() => setToggleMenu(false)}/>
-    : <HiMenuAlt4 fontSiz={28} className="text-white md:hidden cursor-pointer" onclick={() => setToggleMenu()}/>
+    ? <AiOutlineClose fontSize={28} className="text-white md:hidden cursor-pointer" onclick={() => setToggleMenu(false)}/>
+    : <HiMenuAlt4 fontSize={28} className="text-white md:hidden cursor-pointer" onclick={() => setToggleMenu(true)}/>
 }
 </div>
             </nav>
