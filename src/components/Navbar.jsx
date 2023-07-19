@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HiMenuAlt4} from 'react-icons/hi';
+import {HiMenu, HiMenuAlt4} from 'react-icons/hi';
 import { AiOutlineClose} from 'react-icons/ai';
 import PropTypes from 'prop-types'
 
@@ -13,7 +13,7 @@ return(
 {title}
 </li>
 )
-};
+}
 
 NavbarItem.propTypes= {
     title: PropTypes.any.isRequired,
@@ -38,8 +38,8 @@ Login
 </ul>
 <div className="flex relative">
     {toggleMenu
-    ? <AiOutlineClose fontSize={28} className="text-white md:hidden cursor-pointer" onclick={() => setToggleMenu(false)}/>
-    : <HiMenuAlt4 fontSize={28} className="text-white md:hidden cursor-pointer" onclick={() => setToggleMenu(true)}/>
+    ? <AiOutlineClose fontSize={28} className="text-white md:hidden cursor-pointer" onClick={() => setToggleMenu(false)}/> 
+    : <HiMenuAlt4 fontSize={28} className="text-white md:hidden cursor-pointer" onClick={() => setToggleMenu(true)}/>
 }
 </div>
             </nav>
