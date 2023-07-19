@@ -36,11 +36,23 @@ Login
 </li>
 
 </ul>
+
 <div className="flex relative">
     {toggleMenu
     ? <AiOutlineClose fontSize={28} className="text-white md:hidden cursor-pointer" onClick={() => setToggleMenu(false)}/> 
     : <HiMenuAlt4 fontSize={28} className="text-white md:hidden cursor-pointer" onClick={() => setToggleMenu(true)}/>
 }
+{toggleMenu && (
+    <ul 
+    className="z-10 fixed top-0 right-2 p-3 w-[70vw]">
+        <li className="text-xl w-full my-2">
+         <AiOutlineClose onClick={() => setToggleMenu (false)}/>
+        </li>
+        {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
+<NavbarItem key={item + index} title={item} classProps="my-2 text-lg"/>
+))}
+    </ul>
+)}
 </div>
             </nav>
     )
