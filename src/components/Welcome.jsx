@@ -25,6 +25,9 @@ const Welcome = () => {
              <h1 className="text-3x1 sm:text-5xl text-white text-gradient py-1">
                 Send Crypto <br/> across the world
              </h1>
+             <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
+                Explore the crypto world. Buy and sell cryptocurrencies easily on Krypto.
+             </p>
            </div>
         </div>
       </div>
