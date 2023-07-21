@@ -18,6 +18,9 @@ import {BsInfoCircle } from 'react-icons/bs';
 // export default Welcome
 
 const Welcome = () => {
+  const connectwallet = () => {
+    
+  }
     return(
       <div className="flex w-full justify-center items-center">
         <div className="flex md:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
@@ -28,6 +31,11 @@ const Welcome = () => {
              <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
                 Explore the crypto world. Buy and sell cryptocurrencies easily on Krypto.
              </p>
+             <button 
+             type="button" 
+             onClick={connectwallet}>
+
+             </button>
            </div>
         </div>
       </div>
