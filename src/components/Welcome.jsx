@@ -19,7 +19,7 @@ import {BsInfoCircle } from 'react-icons/bs';
 
 const Welcome = () => {
   const connectwallet = () => {
-    
+
   }
     return(
       <div className="flex w-full justify-center items-center">
@@ -33,9 +33,13 @@ const Welcome = () => {
              </p>
              <button 
              type="button" 
-             onClick={connectwallet}>
-
+             onClick={connectwallet}
+             className="flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]">
+                 <p className="text-white text-base font-semibold">Connect Wallet</p>
              </button>
+             <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
+
+             </div>
            </div>
         </div>
       </div>
