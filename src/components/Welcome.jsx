@@ -3,7 +3,7 @@ import { SiEthereum } from 'react-icons/si';
 import {BsInfoCircle } from 'react-icons/bs';
 
 //  import { loader} from './';
-
+const commonStyles =``
 // const Welcome = () => {
 //     return(
 //       <div className="flex w-full justify-center items-center">
